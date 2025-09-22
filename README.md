@@ -2,7 +2,6 @@
 ## The First Decentralized Professional Directory for Web3 LATAM
 
 [![BlockDAG](https://img.shields.io/badge/Built%20on-BlockDAG-blue)](https://blockdag.network)
-[![Grant](https://img.shields.io/badge/Grant-$100K-green)](https://github.com/blockdag)
 [![AI Powered](https://img.shields.io/badge/AI-Powered-purple)](https://llama.meta.com)
 [![Privacy](https://img.shields.io/badge/Privacy-First-orange)](https://ipfs.io)
 
