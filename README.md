@@ -640,33 +640,7 @@ IPFS_API_URL=https://ipfs.infura.io:5001
 
 ---
 
-## 🤝 **Contributing**
 
-We welcome contributions from the LATAM Web3 community!
-
-### **How to Contribute**
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 🤝 **Contributing**
-
-We welcome contributions from the LATAM Web3 community!
-
-### **How to Contribute**
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### **Development Guidelines**
-- Follow TypeScript best practices
-- Write comprehensive tests
-- Document all API endpoints
-- Use conventional commit messages
 
 ---
 
@@ -735,8 +709,6 @@ All contracts are verified on BlockDAG Explorer:
 - Encrypted data storage
 - Regular security assessments
 
-### **Bug Bounty Program**
-We maintain an active bug bounty program. Report security vulnerabilities to: security@latambuilders.com
 
 ---
 
