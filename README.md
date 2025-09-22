@@ -33,12 +33,12 @@ graph TD
     E --> H[API Gateway Router]
     
     %% API Endpoints
-    H --> I[/api/builders/search]
-    H --> J[/api/profiles/create]
-    H --> K[/api/payments/process]
-    H --> L[/api/matching/ai]
-    H --> M[/api/analytics/reputation]
-    H --> N[/api/contracts/deploy]
+    H --> I[Builders Search API]
+    H --> J[Profiles Create API]
+    H --> K[Payments Process API]
+    H --> L[AI Matching API]
+    H --> M[Analytics API]
+    H --> N[Contracts Deploy API]
     
     %% AI Agent Layer
     O[🤖 BILDI AI Agent] --> P[Llama 3.2 LLM Engine]
@@ -203,7 +203,7 @@ graph TD
 ```mermaid
 graph TD
     %% Company Input Phase
-    A[🏢 Company Request] --> B["📱 Telegram Message:<br/>Need 3 Solidity devs<br/>for audit, 2 weeks,<br/>5000 USDC budget"]
+    A[🏢 Company Request] --> B[📱 Telegram Message with Requirements]
     
     %% AI Processing Engine
     B --> C[🤖 BILDI AI Agent]
@@ -211,12 +211,12 @@ graph TD
     D --> E[📝 Natural Language Understanding]
     
     %% Information Extraction
-    E --> F[🎯 Skills: Solidity, Smart Contract Auditing]
-    E --> G[👥 Team Size: 3 developers]
-    E --> H[⏰ Duration: 2 weeks]
-    E --> I[💰 Budget: 5000 USDC → BDAG conversion]
-    E --> J[📋 Project Type: Security Audit]
-    E --> K[🌎 Location: Remote/LATAM preferred]
+    E --> F[🎯 Skills Required]
+    E --> G[👥 Team Size]
+    E --> H[⏰ Project Duration]
+    E --> I[💰 Budget Amount]
+    E --> J[📋 Project Type]
+    E --> K[🌎 Location Preference]
     
     %% Blockchain Query Phase
     F --> L[🔍 Query BlockDAG Network]
@@ -241,13 +241,13 @@ graph TD
     R --> S
     
     S --> T[🧮 Calculate Compatibility Scores]
-    T --> U[📊 Weight Factors:<br/>Skills(40%) + Experience(25%)<br/>+ Reputation(20%) + Availability(15%)]
+    T --> U[📊 Apply Weighting Factors]
     
     %% Top Candidates Selection
-    U --> V[🥇 María González<br/>Score: 96/100<br/>5 years Solidity, Lead Auditor]
-    U --> W[🥈 Carlos Mendoza<br/>Score: 93/100<br/>3 years experience, Available now]
-    U --> X[🥉 Ana Rodriguez<br/>Score: 90/100<br/>4 years, Security specialist]
-    U --> Y[4️⃣ Roberto Silva<br/>Score: 87/100<br/>Backup candidate]
+    U --> V[🥇 Maria Gonzalez - Score 96]
+    U --> W[🥈 Carlos Mendoza - Score 93]
+    U --> X[🥉 Ana Rodriguez - Score 90]
+    U --> Y[4️⃣ Roberto Silva - Score 87]
     
     %% Smart Contract Deployment
     V --> Z[🚀 Auto-Deploy Escrow Contract]
@@ -268,11 +268,11 @@ graph TD
     X --> FF
     
     %% Notification Content
-    FF --> GG[📄 Project Details & Requirements]
-    FF --> HH[💰 Payment: 1666 BDAG each]
-    FF --> II[⛓️ Smart Contract: 0x1a2b3c...]
+    FF --> GG[📄 Project Details]
+    FF --> HH[💰 Payment Information]
+    FF --> II[⛓️ Smart Contract Address]
     FF --> JJ[✅ Accept Project Button]
-    FF --> KK[📊 Team Composition Preview]
+    FF --> KK[📊 Team Composition]
     
     %% Builder Response Handling
     JJ --> LL{Builder Response}
@@ -349,47 +349,47 @@ graph TD
     E --> O[⛓️ Contracts API]
     
     %% Builders API Endpoints
-    J --> P[GET /api/v1/builders]
-    J --> Q[POST /api/v1/builders/create]
-    J --> R[PUT /api/v1/builders/{id}]
-    J --> S[GET /api/v1/builders/{id}/profile]
-    J --> T[POST /api/v1/builders/{id}/verify]
-    J --> U[GET /api/v1/builders/search]
+    J --> P[Get Builders List]
+    J --> Q[Create Builder Profile]
+    J --> R[Update Builder Info]
+    J --> S[Get Builder Profile]
+    J --> T[Verify Builder]
+    J --> U[Search Builders]
     
     %% Companies API Endpoints
-    K --> V[GET /api/v1/companies]
-    K --> W[POST /api/v1/companies/register]
-    K --> X[POST /api/v1/companies/{id}/projects]
-    K --> Y[GET /api/v1/companies/{id}/hired]
-    K --> Z[POST /api/v1/companies/{id}/feedback]
+    K --> V[Get Companies List]
+    K --> W[Register Company]
+    K --> X[Create Company Project]
+    K --> Y[Get Hired Builders]
+    K --> Z[Submit Company Feedback]
     
     %% AI Matching API
-    L --> AA[POST /api/v1/ai/match]
-    L --> BB[GET /api/v1/ai/recommendations]
-    L --> CC[POST /api/v1/ai/feedback]
-    L --> DD[GET /api/v1/ai/analytics]
-    L --> EE[POST /api/v1/ai/train]
+    L --> AA[AI Match Request]
+    L --> BB[Get AI Recommendations]
+    L --> CC[Submit AI Feedback]
+    L --> DD[Get AI Analytics]
+    L --> EE[Train AI Model]
     
     %% Payments API
-    M --> FF[POST /api/v1/payments/process]
-    M --> GG[GET /api/v1/payments/status/{id}]
-    M --> HH[POST /api/v1/payments/escrow]
-    M --> II[POST /api/v1/payments/release]
-    M --> JJ[GET /api/v1/payments/history]
+    M --> FF[Process Payment]
+    M --> GG[Get Payment Status]
+    M --> HH[Create Escrow]
+    M --> II[Release Payment]
+    M --> JJ[Get Payment History]
     
     %% Analytics API
-    N --> KK[GET /api/v1/analytics/builders]
-    N --> LL[GET /api/v1/analytics/projects]
-    N --> MM[GET /api/v1/analytics/revenue]
-    N --> NN[GET /api/v1/analytics/reputation]
-    N --> OO[GET /api/v1/analytics/market]
+    N --> KK[Builders Analytics]
+    N --> LL[Projects Analytics]
+    N --> MM[Revenue Analytics]
+    N --> NN[Reputation Analytics]
+    N --> OO[Market Analytics]
     
     %% Contracts API
-    O --> PP[POST /api/v1/contracts/deploy]
-    O --> QQ[GET /api/v1/contracts/{address}]
-    O --> RR[POST /api/v1/contracts/interact]
-    O --> SS[GET /api/v1/contracts/events]
-    O --> TT[POST /api/v1/contracts/verify]
+    O --> PP[Deploy Smart Contract]
+    O --> QQ[Get Contract Info]
+    O --> RR[Interact with Contract]
+    O --> SS[Get Contract Events]
+    O --> TT[Verify Contract]
     
     %% Backend Services
     P --> UU[🗄️ PostgreSQL Database]
@@ -640,12 +640,67 @@ IPFS_API_URL=https://ipfs.infura.io:5001
 
 ---
 
+## 🤝 **Contributing**
+
+We welcome contributions from the LATAM Web3 community!
+
+### **How to Contribute**
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## 🤝 **Contributing**
+
+We welcome contributions from the LATAM Web3 community!
+
+### **How to Contribute**
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ### **Development Guidelines**
 - Follow TypeScript best practices
 - Write comprehensive tests
 - Document all API endpoints
 - Use conventional commit messages
+
+---
+
+## 📡 **API Documentation**
+
+### **Core Endpoints**
+
+```bash
+# Builders API
+GET    /api/v1/builders              # List all builders
+POST   /api/v1/builders/create       # Create new builder profile
+PUT    /api/v1/builders/{id}         # Update builder profile
+GET    /api/v1/builders/{id}/profile # Get specific builder
+GET    /api/v1/builders/search       # Search builders
+
+# Companies API  
+POST   /api/v1/companies/register    # Register company
+POST   /api/v1/companies/{id}/projects # Create project
+GET    /api/v1/companies/{id}/hired  # Get hired builders
+
+# AI Matching
+POST   /api/v1/ai/match              # Get AI recommendations
+POST   /api/v1/ai/feedback           # Submit feedback
+
+# Payments
+POST   /api/v1/payments/process      # Process payment
+POST   /api/v1/payments/escrow       # Create escrow
+POST   /api/v1/payments/release      # Release payment
+
+# Smart Contracts
+POST   /api/v1/contracts/deploy      # Deploy new contract
+GET    /api/v1/contracts/{address}   # Get contract info
+POST   /api/v1/contracts/interact    # Interact with contract
+```
 
 ---
 
@@ -663,6 +718,11 @@ contract BlockDAGProfileFactory {
 }
 ```
 
+### **Contract Verification**
+All contracts are verified on BlockDAG Explorer:
+- Profile Factory: [0x...](https://explorer.blockdag.network/address/0x...)
+- Escrow Factory: [0x...](https://explorer.blockdag.network/address/0x...)
+- Reputation Registry: [0x...](https://explorer.blockdag.network/address/0x...)
 
 ---
 
@@ -675,9 +735,14 @@ contract BlockDAGProfileFactory {
 - Encrypted data storage
 - Regular security assessments
 
+### **Bug Bounty Program**
+We maintain an active bug bounty program. Report security vulnerabilities to: security@latambuilders.com
 
+---
 
-### **Join the LATAM Builders **
+## 🌎 **Community**
+
+### **Join the LATAM Builders Community**
 
 - 🌐 [Website](https://latambuilders.xyz)
 
@@ -691,6 +756,16 @@ contract BlockDAGProfileFactory {
 ## 📄 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 **Acknowledgments**
+
+Special thanks to:
+- BlockDAG Network team for the grant opportunity
+- LATAM Web3 community for continuous feedback
+- All beta testers and early adopters
+- Open source contributors
 
 ---
 
