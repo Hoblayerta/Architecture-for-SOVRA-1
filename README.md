@@ -1,5 +1,5 @@
 # ARquitecture-for-SOVRA
-
+```mermaid
 graph TD
     %% Frontend Layer
     A[👤 User Interface] --> B[React + Next.js + ThirdWeb v5]
