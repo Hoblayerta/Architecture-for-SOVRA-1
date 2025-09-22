@@ -229,7 +229,7 @@ graph TD
     %% Smart Contract Data Retrieval
     L --> M[📊 Read Profile Factory Contract]
     M --> N[📝 Fetch Individual Profiles]
-    N --> O[🔒 Access Private Data (Paid)]
+    N --> O[🔒 Access Private Data with Payment]
     N --> P[⭐ Check Reputation Scores]
     N --> Q[📅 Verify Availability]
     N --> R[💰 Compare Rate Expectations]
@@ -284,7 +284,7 @@ graph TD
     MM --> PP[👥 Check Team Status]
     PP --> QQ{Team Complete?}
     QQ -->|No| NN
-    QQ -->|Yes| RR[🎉 Team Assembled!]
+    QQ -->|Yes| RR[🎉 Team Assembled]
     
     %% Project Execution Phase
     RR --> SS[📈 BILDI Monitors Progress]
@@ -313,7 +313,7 @@ graph TD
     %% Error Handling
     LL -->|Timeout| HHH[⏰ Escalate to Human]
     UU -->|Dispute| III[⚖️ Activate Arbitration]
-    VV -->|Payment Fail| JJJ[🚨 Alert & Retry]
+    VV -->|Payment Fail| JJJ[🚨 Alert and Retry]
     
     style C fill:#e8f5e8
     style S fill:#e1f5fe
