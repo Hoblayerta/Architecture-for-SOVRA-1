@@ -451,14 +451,14 @@ graph TD
     B --> H[🔍 Priority Matching]
     
     %% Builder Earning Flow
-    E --> I[👥 Builder receives 80%]
+    E --> I[👥 Builder receives 80 percent]
     F --> J[✅ Project completion payments]
     G --> K[🎁 Feature access rewards]
     H --> L[🚀 Boost visibility]
     
     %% Platform Revenue
-    E --> M[🏢 Platform receives 20%]
-    J --> N[📊 5% platform fee]
+    E --> M[🏢 Platform receives 20 percent]
+    J --> N[📊 5 percent platform fee]
     G --> O[💼 Subscription revenue]
     H --> P[⚡ Service fees]
     
@@ -471,7 +471,7 @@ graph TD
     
     %% Staking System
     S --> W[👥 Builder stakes for credibility]
-    S --> X[📈 Higher stake = higher trust score]
+    S --> X[📈 Higher stake equals higher trust]
     S --> Y[⚖️ Slash for poor performance]
     S --> Z[🏆 Rewards for good performance]
     
@@ -487,24 +487,24 @@ graph TD
     U --> GG[🔄 Automated operations]
     U --> HH[📊 ML model training]
     
-    %% Security & Trust
+    %% Security and Trust
     V --> II[🔒 Project escrow deposits]
     V --> JJ[⚖️ Dispute arbitration bonds]
     V --> KK[🛡️ Anti-spam measures]
     V --> LL[✅ Identity verification stakes]
     
     %% Cost Comparison Analysis
-    MM[💸 BlockDAG Advantages] --> NN[$0.001 per transaction]
-    MM --> OO[$24/month for 1000 builders]
-    MM --> PP[97% cheaper than competitors]
-    MM --> QQ[10,000+ TPS capacity]
+    MM[💸 BlockDAG Advantages] --> NN[0.001 USD per transaction]
+    MM --> OO[24 USD per month for 1000 builders]
+    MM --> PP[97 percent cheaper than competitors]
+    MM --> QQ[10000 plus TPS capacity]
     
     %% Revenue Streams
     RR[📈 Platform Revenue] --> SS[🔐 Private data access fees]
     RR --> TT[🤝 Project platform fees]
     RR --> UU[⭐ Premium subscriptions]
     RR --> VV[🏢 Enterprise API access]
-    RR --> WW[📊 Analytics & insights]
+    RR --> WW[📊 Analytics and insights]
     
     %% Token Economics Flow
     SS --> XX[💎 Token buyback program]
@@ -519,9 +519,9 @@ graph TD
     XX --> AAA[🎁 Staker rewards distribution]
     
     %% Network Effects
-    BBB[🌐 Network Growth] --> CCC[📈 More builders = more value]
-    BBB --> DDD[🏢 More companies = higher demand]
-    BBB --> EEE[🤖 Better AI = better matches]
+    BBB[🌐 Network Growth] --> CCC[📈 More builders equals more value]
+    BBB --> DDD[🏢 More companies equals higher demand]
+    BBB --> EEE[🤖 Better AI equals better matches]
     BBB --> FFF[💰 Higher token velocity]
     
     %% Sustainability Model
@@ -636,11 +636,9 @@ IPFS_API_URL=https://ipfs.infura.io:5001
 - 📋 1000+ verified builders onboarded
 - 📋 Partnership with major LATAM companies
 - 📋 Advanced analytics and insights
-- 📋 Cross-chain bridge development
+
 
 ---
-
-
 
 ---
 
@@ -709,8 +707,6 @@ All contracts are verified on BlockDAG Explorer:
 - Encrypted data storage
 - Regular security assessments
 
-
----
 
 ## 🌎 **Community**
 
