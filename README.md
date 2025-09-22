@@ -14,7 +14,7 @@ LATAM Builders is a revolutionary decentralized professional directory that conn
 - 🔐 **Three-Layer Privacy** - Granular data protection  
 - ⚡ **97% Lower Costs** - BlockDAG's DAG structure advantage
 - 🌎 **LATAM Focus** - Specialized for Latin American market
-- 💰 **BDAG Integration** - Native token utility and staking
+- 💰 **Token Integration** - Native token utility and staking
 
 ---
 
