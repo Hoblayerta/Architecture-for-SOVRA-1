@@ -1,20 +1,20 @@
-# 🚀 LATAM Builders x BlockDAG Network
-## The First Decentralized Professional Directory for Web3 LATAM
+# LATAM Builders x SOVRA 
+## The First Professional Directory for Web3 LATAM
 
-[![BlockDAG](https://img.shields.io/badge/Built%20on-BlockDAG-blue)](https://blockdag.network)
 [![AI Powered](https://img.shields.io/badge/AI-Powered-purple)](https://llama.meta.com)
 [![Privacy](https://img.shields.io/badge/Privacy-First-orange)](https://ipfs.io)
 
-## 🎯 **Project Overview**
+## **Project Overview**
 
 LATAM Builders is a revolutionary decentralized professional directory that connects top Web3 talent across Latin America with global opportunities. Built on BlockDAG Network for superior performance and cost-efficiency.
 
-### **Key Features**
-- 🤖 **AI Agent "BILDI"** - Automated talent matching
-- 🔐 **Three-Layer Privacy** - Granular data protection  
-- ⚡ **97% Lower Costs** - BlockDAG's DAG structure advantage
-- 🌎 **LATAM Focus** - Specialized for Latin American market
-- 💰 **Token Integration** - Native token utility and staking
+### **Overall Key Features**
+- **LATAM Focus** - Specialized for Latin American market with expansion in mind 
+- **AI Agent "BILDI"** - Automated talent matching
+- **Innovative Data collection and reputation system** - Through API and proprietary development
+- **Payment System Integration** - innovative approach to split the payment btw LB and data owner
+- **Three-Layer Privacy** - Granular data protection  
+- **Utility Token Integration** - Native token utility and staking
 
 ---
 
@@ -23,12 +23,12 @@ LATAM Builders is a revolutionary decentralized professional directory that conn
 ```mermaid
 graph TD
     %% Frontend Layer
-    A[👤 User Interface] --> B[React + Next.js + ThirdWeb v5]
+    A[User Interface] --> B[React + Next.js + ThirdWeb v5]
     B --> C[Wallet Connection Manager]
     C --> D[Profile Management Dashboard]
     
     %% API Gateway Layer
-    E[🌐 LATAM Builders REST API] --> F[Authentication Middleware]
+    E[LATAM Builders REST API] --> F[Authentication Middleware]
     E --> G[Rate Limiting Layer]
     E --> H[API Gateway Router]
     
@@ -41,31 +41,31 @@ graph TD
     H --> N[Contracts Deploy API]
     
     %% AI Agent Layer
-    O[🤖 BILDI AI Agent] --> P[Llama 3.2 LLM Engine]
+    O[BILDI AI Agent] --> P[Llama 3.2 LLM Engine]
     O --> Q[Telegram Bot Integration]
     O --> R[Smart Matching Algorithm]
     O --> S[Contract Automation Engine]
     
     %% Privacy Management
-    T[🔐 Privacy Controller] --> U[Level 1: Public Data]
+    T[Privacy Controller] --> U[Level 1: Public Data]
     T --> V[Level 2: Encrypted Access]
     T --> W[Level 3: Confidential Proofs]
     
-    %% BlockDAG Blockchain Layer
-    X[⛓️ BlockDAG Network] --> Y[Profile Factory Contract]
+    %% Blockchain Layer
+    X --> Y[Profile Factory Contract]
     X --> Z[Individual Profile Contracts]
     X --> AA[Escrow Smart Contracts]
-    X --> BB[BDAG Token Handler]
+    X --> BB[Token Handler]
     X --> CC[Reputation Registry]
     
     %% Storage Infrastructure
-    DD[💾 Data Storage] --> EE[IPFS Distributed Network]
+    DD[Data Storage] --> EE[IPFS Distributed Network]
     DD --> FF[PostgreSQL Database]
     DD --> GG[Redis Cache Layer]
     DD --> HH[Backup Systems]
     
     %% External Integrations
-    II[📡 External APIs] --> JJ[GitHub API Integration]
+    II[External APIs] --> JJ[GitHub API Integration]
     II --> KK[Market Data Feeds]
     II --> LL[Telegram Bot API]
     II --> MM[Email Notification Service]
@@ -121,7 +121,7 @@ graph TD
 ```mermaid
 graph TD
     %% User Input
-    A[👤 Builder Profile Creation] --> B[📝 Data Classification]
+    A[👤 Builder Profile Creation] --> B[Data Classification]
     
     %% Data Classification
     B --> C[🌍 Public Information]
@@ -129,64 +129,64 @@ graph TD
     B --> E[🔐 Confidential Information]
     
     %% Level 1: Public Data (On-chain)
-    C --> F[📊 Public Profile Smart Contract]
-    F --> G[Name, Skills, Portfolio Links]
+    C --> F[Public Profile Smart Contract]
+    F --> G[Name, Skills]
     F --> H[Public Reputation Score]
+    F --> I[Year first joined Web3]
     F --> I[Availability Status]
-    F --> J[Hourly Rate Range]
     
     %% Level 2: Encrypted Access (IPFS + Payment Gate)
     D --> K[🔒 Encrypted Data Package]
     K --> L[AES-256 Encryption]
-    L --> M[📦 IPFS Storage]
-    M --> N[💰 BDAG Payment Required]
-    N --> O[🔑 Decryption Key Release]
+    L --> M[IPFS Storage]
+    M --> N[Payment Required]
+    N --> O[Decryption Key Release]
     
     %% Level 2 Content
-    O --> P[📧 Contact Information]
-    O --> Q[📱 Social Media Profiles]
-    O --> R[💼 Detailed Work History]
-    O --> S[📈 Performance Metrics]
+    O --> P[Contact Information]
+    O --> Q[Social Media Profiles]
+    O --> R[Detailed Work History]
+    O --> S[Performance Metrics]
     
     %% Level 3: Confidential Proofs (Zero-Knowledge Style)
-    E --> T[🛡️ Cryptographic Commitments]
+    E --> T[Cryptographic Commitments]
     T --> U[Hash-based Commitments]
-    U --> V[📋 Identity Verification]
-    U --> W[🎓 Education Certificates]
-    U --> X[💰 Salary History]
-    U --> Y[⭐ Client References]
+    U --> V[Identity Verification]
+    U --> W[Education Certificates]
+    U --> X[Salary History]
+    U --> Y[Client References]
     
     %% Verification Process
-    V --> Z[🔍 Verification Request]
-    Z --> AA[📤 Generate Proof]
-    AA --> BB[✅ Verify Without Revealing]
-    BB --> CC[📝 Update Reputation]
+    V --> Z[Verification Request]
+    Z --> AA[Generate Proof]
+    AA --> BB[Verify Without Revealing]
+    BB --> CC[Update Reputation]
     
     %% Smart Contract Integration
-    F --> DD[⛓️ BlockDAG Profile Contract]
-    M --> EE[⛓️ Access Control Contract]
-    T --> FF[⛓️ Verification Registry]
+    F --> DD[Profile Contract]
+    M --> EE[Access Control Contract]
+    T --> FF[Verification Registry]
     
     %% Payment Flow
-    N --> GG[💸 Company Pays BDAG]
-    GG --> HH[🏦 80% to Builder]
-    GG --> II[🏢 20% to Platform]
+    N --> GG[Company Pays LB]
+    GG --> HH[80% to Builder]
+    GG --> II[20% to LB]
     
     %% Access Control
     EE --> JJ{Authorized Access?}
     JJ -->|Yes| O
-    JJ -->|No| KK[❌ Access Denied]
+    JJ -->|No| KK[Access Denied]
     
     %% Privacy Enforcement
     DD --> LL[🔒 Privacy Policy Enforcement]
     EE --> LL
     FF --> LL
-    LL --> MM[📊 Audit Trail]
+    LL --> MM[Audit Trail]
     
     %% Data Protection
-    LL --> NN[🛡️ GDPR Compliance]
-    LL --> OO[🔐 Right to be Forgotten]
-    LL --> PP[📋 Data Portability]
+    LL --> NN[GDPR Compliance]
+    LL --> OO[Right to be Forgotten]
+    LL --> PP[Data Portability]
     
     style C fill:#e8f5e8
     style D fill:#fff3e0
@@ -206,20 +206,20 @@ graph TD
     A[🏢 Company Request] --> B[📱 Telegram Message with Requirements]
     
     %% AI Processing Engine
-    B --> C[🤖 BILDI AI Agent]
-    C --> D[🧠 Llama 3.2 Processing]
-    D --> E[📝 Natural Language Understanding]
+    B --> C[BILDI AI Agent]
+    C --> D[Llama 3.2 Processing]
+    D --> E[Natural Language Understanding]
     
     %% Information Extraction
-    E --> F[🎯 Skills Required]
-    E --> G[👥 Team Size]
-    E --> H[⏰ Project Duration]
-    E --> I[💰 Budget Amount]
-    E --> J[📋 Project Type]
-    E --> K[🌎 Location Preference]
+    E --> F[Skills Required]
+    E --> G[Team Size]
+    E --> H[Project Duration]
+    E --> I[Budget Amount]
+    E --> J[Project Type]
+    E --> K[Location Preference]
     
     %% Blockchain Query Phase
-    F --> L[🔍 Query BlockDAG Network]
+    F --> L[Query Network]
     G --> L
     H --> L
     I --> L
@@ -235,31 +235,31 @@ graph TD
     N --> R[💰 Compare Rate Expectations]
     
     %% AI Matching Algorithm
-    O --> S[🎯 Advanced Matching Engine]
+    O --> S[Advanced Matching Engine]
     P --> S
     Q --> S
     R --> S
     
-    S --> T[🧮 Calculate Compatibility Scores]
-    T --> U[📊 Apply Weighting Factors]
+    S --> T[Calculate Compatibility Scores]
+    T --> U[Apply Weighting Factors]
     
     %% Top Candidates Selection
-    U --> V[🥇 Maria Gonzalez - Score 96]
-    U --> W[🥈 Carlos Mendoza - Score 93]
-    U --> X[🥉 Ana Rodriguez - Score 90]
-    U --> Y[4️⃣ Roberto Silva - Score 87]
+    U --> V[Maria Gonzalez - Score 96]
+    U --> W[Carlos Mendoza - Score 93]
+    U --> X[Ana Rodriguez - Score 90]
+    U --> Y[4️Roberto Silva - Score 87]
     
     %% Smart Contract Deployment
-    V --> Z[🚀 Auto-Deploy Escrow Contract]
+    V --> Z[Auto-Deploy Escrow Contract]
     W --> Z
     X --> Z
     
     %% Escrow Configuration
-    Z --> AA[🔒 Lock 5000 BDAG tokens]
-    Z --> BB[📋 Set Milestone Conditions]
-    Z --> CC[⚖️ Configure Dispute Resolution]
-    Z --> DD[🤖 Enable Auto-payments]
-    Z --> EE[📊 Setup Performance Tracking]
+    Z --> AA[Lock 5000 tokens]
+    Z --> BB[Set Milestone Conditions]
+    Z --> CC[Configure Dispute Resolution]
+    Z --> DD[Enable Auto-payments]
+    Z --> EE[Setup Performance Tracking]
     
     %% Notification System
     AA --> FF[📲 Send Telegram Notifications]
@@ -330,23 +330,23 @@ graph TD
 graph TD
     %% API Gateway
     A[🌐 API Gateway] --> B[🔐 Authentication Layer]
-    B --> C[🚦 Rate Limiting]
-    C --> D[📊 Request Analytics]
-    D --> E[🔀 Load Balancer]
+    B --> C[Rate Limiting]
+    C --> D[Request Analytics]
+    D --> E[Load Balancer]
     
     %% Authentication Methods
-    B --> F[🔑 JWT Tokens]
-    B --> G[👛 Wallet Signature]
-    B --> H[🆔 OAuth 2.0]
-    B --> I[🤖 API Keys]
+    B --> F[JWT Tokens]
+    B --> G[Wallet Signature]
+    B --> H[OAuth 2.0]
+    B --> I[API Keys]
     
     %% Core API Endpoints
-    E --> J[👥 Builders API]
-    E --> K[🏢 Companies API]
-    E --> L[🤖 AI Matching API]
-    E --> M[💰 Payments API]
-    E --> N[📊 Analytics API]
-    E --> O[⛓️ Contracts API]
+    E --> J[Builders API]
+    E --> K[Companies API]
+    E --> L[AI Matching API]
+    E --> M[Payments API]
+    E --> N[Analytics API]
+    E --> O[Contracts API]
     
     %% Builders API Endpoints
     J --> P[Get Builders List]
@@ -393,27 +393,27 @@ graph TD
     
     %% Backend Services
     P --> UU[🗄️ PostgreSQL Database]
-    AA --> VV[🤖 AI Engine Service]
-    FF --> WW[⛓️ BlockDAG Node]
-    KK --> XX[📊 Analytics Engine]
-    PP --> YY[📜 Contract Factory]
+    AA --> VV[AI Engine Service]
+    FF --> WW[Node]
+    KK --> XX[Analytics Engine]
+    PP --> YY[Contract Factory]
     
     %% External Integrations
-    VV --> ZZ[🦙 Llama 3.2 API]
-    WW --> AAA[⛓️ BlockDAG Network]
-    XX --> BBB[📈 Data Visualization]
-    U --> CCC[🔍 Elasticsearch]
+    VV --> ZZ[Llama 3.2 API]
+    WW --> AAA[Network]
+    XX --> BBB[Data Visualization]
+    U --> CCC[Elasticsearch]
     
     %% Response Formats
-    UU --> DDD[📄 JSON Response]
-    VV --> EEE[🤖 AI Match Results]
-    WW --> FFF[⛓️ Transaction Data]
-    XX --> GGG[📊 Analytics Dashboard]
+    UU --> DDD[JSON Response]
+    VV --> EEE[AI Match Results]
+    WW --> FFF[Transaction Data]
+    XX --> GGG[Analytics Dashboard]
     
     %% Error Handling
-    D --> HHH[🚨 Error Logging]
-    HHH --> III[📧 Alert System]
-    HHH --> JJJ[📊 Error Analytics]
+    D --> HHH[Error Logging]
+    HHH --> III[Alert System]
+    HHH --> JJJ[Error Analytics]
     
     %% Caching Layer
     UU --> KKK[⚡ Redis Cache]
@@ -421,9 +421,9 @@ graph TD
     BBB --> KKK
     
     %% Security Features
-    C --> LLL[🛡️ DDoS Protection]
-    C --> MMM[🔒 Data Encryption]
-    C --> NNN[📝 Audit Logging]
+    C --> LLL[DDoS Protection]
+    C --> MMM[Data Encryption]
+    C --> NNN[Audit Logging]
     
     style A fill:#e1f5fe
     style J fill:#e8f5e8
@@ -435,100 +435,100 @@ graph TD
 
 ---
 
-## 💰 **5. Economics & Token Flow**
+##  **5. Economics & Token Flow**
 
 ```mermaid
 graph TD
-    %% BDAG Token Sources
-    A[💰 BDAG Token Economy] --> B[🏢 Companies Purchase BDAG]
-    A --> C[👥 Builders Earn BDAG]
-    A --> D[🏗️ Platform Operations]
+    %% Token Sources
+    A --> B[Companies Purchase Token]
+    A --> C[Builders Earn Token]
+    A --> D[Platform Operations]
     
     %% Company Payment Flow
-    B --> E[💳 Pay for Private Access]
-    B --> F[🤝 Fund Project Escrows]
-    B --> G[⭐ Premium Features]
-    B --> H[🔍 Priority Matching]
+    B --> E[Pay for Private Access]
+    B --> F[Fund Project Escrows]
+    B --> G[Premium Features]
+    B --> H[Priority Matching]
     
     %% Builder Earning Flow
-    E --> I[👥 Builder receives 80 percent]
-    F --> J[✅ Project completion payments]
-    G --> K[🎁 Feature access rewards]
-    H --> L[🚀 Boost visibility]
+    E --> I[Builder receives 80 percent]
+    F --> J[Project completion payments]
+    G --> K[Feature access rewards]
+    H --> L[Boost visibility]
     
     %% Platform Revenue
-    E --> M[🏢 Platform receives 20 percent]
-    J --> N[📊 5 percent platform fee]
-    G --> O[💼 Subscription revenue]
-    H --> P[⚡ Service fees]
+    E --> M[Platform receives 20 percent]
+    J --> N[5 percent platform fee]
+    G --> O[Subscription revenue]
+    H --> P[Service fees]
     
     %% Token Utility Mechanisms
-    Q[🔧 BDAG Token Utility] --> R[💳 Payment Medium]
-    Q --> S[🔒 Staking for Reputation]
-    Q --> T[🗳️ Governance Voting]
-    Q --> U[🤖 AI Agent Operations]
-    Q --> V[🛡️ Security Deposits]
+    Q[Utility Token] --> R[Payment Medium]
+    Q --> S[Staking for Reputation]
+    Q --> T[Governance Voting]
+    Q --> U[AI Agent Operations]
+    Q --> V[Security Deposits]
     
     %% Staking System
-    S --> W[👥 Builder stakes for credibility]
-    S --> X[📈 Higher stake equals higher trust]
-    S --> Y[⚖️ Slash for poor performance]
-    S --> Z[🏆 Rewards for good performance]
+    S --> W[Builder stakes for credibility]
+    S --> X[Higher stake equals higher trust]
+    S --> Y[Slash for poor performance]
+    S --> Z[Rewards for good performance]
     
     %% Governance Features
-    T --> AA[🗳️ Vote on platform features]
-    T --> BB[💰 Fee structure decisions]
-    T --> CC[⚖️ Dispute resolution]
-    T --> DD[🔄 Protocol upgrades]
+    T --> AA[Vote on platform features]
+    T --> BB[Fee structure decisions]
+    T --> CC[Dispute resolution]
+    T --> DD[Protocol upgrades]
     
     %% AI Operations Costs
-    U --> EE[🤖 BILDI matching computations]
-    U --> FF[⛓️ Smart contract deployments]
-    U --> GG[🔄 Automated operations]
-    U --> HH[📊 ML model training]
+    U --> EE[BILDI matching computations]
+    U --> FF[Smart contract deployments]
+    U --> GG[Automated operations]
+    U --> HH[ML model training]
     
     %% Security and Trust
-    V --> II[🔒 Project escrow deposits]
-    V --> JJ[⚖️ Dispute arbitration bonds]
-    V --> KK[🛡️ Anti-spam measures]
-    V --> LL[✅ Identity verification stakes]
+    V --> II[Project escrow deposits]
+    V --> JJ[Dispute arbitration bonds]
+    V --> KK[Anti-spam measures]
+    V --> LL[Identity verification stakes]
     
     %% Cost Comparison Analysis
-    MM[💸 BlockDAG Advantages] --> NN[0.001 USD per transaction]
+    MM[Advantages] --> NN[0.001 USD per transaction]
     MM --> OO[24 USD per month for 1000 builders]
     MM --> PP[97 percent cheaper than competitors]
     MM --> QQ[10000 plus TPS capacity]
     
     %% Revenue Streams
-    RR[📈 Platform Revenue] --> SS[🔐 Private data access fees]
-    RR --> TT[🤝 Project platform fees]
-    RR --> UU[⭐ Premium subscriptions]
-    RR --> VV[🏢 Enterprise API access]
-    RR --> WW[📊 Analytics and insights]
+    RR[Platform Revenue] --> SS[🔐 Private data access fees]
+    RR --> TT[Project platform fees]
+    RR --> UU[Premium subscriptions]
+    RR --> VV[Enterprise API access]
+    RR --> WW[Analytics and insights]
     
     %% Token Economics Flow
-    SS --> XX[💎 Token buyback program]
+    SS --> XX[Token buyback program]
     TT --> XX
     UU --> XX
     VV --> XX
     WW --> XX
     
     %% Value Appreciation Mechanisms
-    XX --> YY[🔥 Token burn mechanism]
-    XX --> ZZ[💰 Liquidity provision]
-    XX --> AAA[🎁 Staker rewards distribution]
+    XX --> YY[Token burn mechanism]
+    XX --> ZZ[Liquidity provision]
+    XX --> AAA[Staker rewards distribution]
     
     %% Network Effects
-    BBB[🌐 Network Growth] --> CCC[📈 More builders equals more value]
-    BBB --> DDD[🏢 More companies equals higher demand]
-    BBB --> EEE[🤖 Better AI equals better matches]
-    BBB --> FFF[💰 Higher token velocity]
+    BBB[Network Growth] --> CCC[ More builders equals more value]
+    BBB --> DDD[More companies equals higher demand]
+    BBB --> EEE[Better AI equals better matches]
+    BBB --> FFF[Higher token velocity]
     
     %% Sustainability Model
-    GGG[♻️ Sustainable Economics] --> HHH[💰 Self-funding through fees]
-    GGG --> III[📊 Data-driven fee optimization]
-    GGG --> JJJ[🎯 Performance-based rewards]
-    GGG --> KKK[🔄 Continuous value creation]
+    GGG[Sustainable Economics] --> HHH[Self-funding through fees]
+    GGG --> III[Data-driven fee optimization]
+    GGG --> JJJ[Performance-based rewards]
+    GGG --> KKK[Continuous value creation]
     
     style A fill:#e8f5e8
     style Q fill:#fff3e0
@@ -540,109 +540,56 @@ graph TD
 
 ---
 
-## 🚀 **Quick Start**
+##  **Quick Start**
 
 ### **Prerequisites**
 - Node.js 18+
 - Yarn or npm
-- BlockDAG wallet
+- EVM compatible wallet
 - PostgreSQL 14+
 - Redis 6+
-
-### **Installation**
-
-```bash
-# Clone the repository
-git clone https://github.com/latam-builders/blockdag-directory
-cd blockdag-directory
-
-# Install dependencies
-yarn install
-
-# Setup environment variables
-cp .env.example .env.local
-
-# Configure your BlockDAG network
-export BLOCKDAG_RPC_URL="https://rpc.blockdag.network"
-export BLOCKDAG_PRIVATE_KEY="your_private_key"
-export DATABASE_URL="postgresql://user:pass@localhost/latam_builders"
-export REDIS_URL="redis://localhost:6379"
-
-# Run database migrations
-yarn db:migrate
-
-# Start development server
-yarn dev
-```
-
-### **Environment Variables**
-
-```env
-# BlockDAG Configuration
-BLOCKDAG_RPC_URL=https://rpc.blockdag.network
-BLOCKDAG_CHAIN_ID=12345
-PROFILE_FACTORY_ADDRESS=0x...
-
-# AI Configuration
-LLAMA_API_KEY=your_llama_api_key
-OPENAI_API_KEY=your_openai_key
-
-# Database
-DATABASE_URL=postgresql://user:pass@localhost/latam_builders
-REDIS_URL=redis://localhost:6379
-
-# External Services
-TELEGRAM_BOT_TOKEN=your_bot_token
-GITHUB_API_TOKEN=your_github_token
-IPFS_API_URL=https://ipfs.infura.io:5001
-```
-
----
-
-## 📊 **Performance Metrics**
-
-### **BlockDAG Network Advantages**
-
-| Metric | BlockDAG | Ethereum L2 | Improvement |
-|--------|----------|-------------|-------------|
-| Transaction Cost | $0.001 | $0.01-0.05 | **90-98% cheaper** |
-| Throughput | 10,000+ TPS | 2,000-4,000 TPS | **2.5x faster** |
-| Finality | 2-3 seconds | 10-30 seconds | **5-10x faster** |
-| Monthly Cost (1000 users) | $24 | $2,600 | **97% savings** |
-
-### **System Performance**
-- **AI Matching**: < 3 seconds response time
-- **Profile Creation**: < 5 seconds end-to-end
-- **Payment Processing**: < 10 seconds confirmation
-- **API Response**: < 200ms average
 
 ---
 
 ## 🛠️ **Development Roadmap**
 
-### **Phase 1: Foundation (Months 1-2)**
-- ✅ Smart contract deployment on BlockDAG
-- ✅ Basic profile creation and management
-- ✅ Payment system integration
-- ✅ BILDI AI agent v1.0
+### **Phase 1: Foundation (Months 1)**
+- Directory V2.0 1/2: updated UX-UI, connect wallet, security, survey built-in, analytics, two languages 
+- Factory Smart contract deployment, including: 
+  - Profile creation and management: 3 profiles (builder; company management; PM); smart contract based profile; basic identity verification through API; three layers of data privacy 
+  - Payment system integration: escrow system; split payments; On/Off Ramp; IA agent connection; EVM compatibility
+- API v1 - Standard API: core infra; basic conversation; matching & payment system; telegram integration; simple escrow; wallet authentification; DB
+- Data Collection Features v1: initial survey responses
 
-### **Phase 2: Enhancement (Months 3-4)**
-- 🔄 Advanced privacy layers implementation
-- 🔄 Reputation system with staking
-- 🔄 Mobile app development
-- 🔄 API v2.0 with advanced features
+**Phase 1: Foundation (Months 2)**
+- Directory V2.0 2/2: updated UX-UI, connect wallet, security, survey built-in, analytics, two languages 
+- 300-500 verified builders onboarded
+- BILDI AI agent v1.0: basic DB scrapping; notifications; telegram integration.
+- API v2: other communication channels; IA powered by BILDI AI Agent; performance analytics and insights 
+- Mobile app version development
 
-### **Phase 3: Scale (Months 5-6)**
-- 📋 1000+ verified builders onboarded
-- 📋 Partnership with major LATAM companies
-- 📋 Advanced analytics and insights
+### **Phase 1: Foundation (Months 3)**
+- Implementation test & adjustments of privacy layers
+- BILDI AI agent v2.0 - AI Engineering: Vector database for embeddings; Smart contract automation; Real-time learning system; Multi-channel communication; Predictive analytics engine
+- Comprehensive data collection and reputation system architecture confirmation 
 
+### **Phase 3: Enhancement (Months 4)**
+- Data collection system implementation v1 1/2: on-chain; off-chain; social media and other APIs
+- Directory 3.0 with first B2B features
+- Infrastructure optimization and performance tuning
+- Smart Contract Audit
+- API stress testing
+- Security vulnerability assessment
+- Bug fixing and polishing user experience
+
+### **Phase 3: Enhancement (Months 5-6)**
+- External security audit
+- Implementing audit feedback & final adjustments
+- Stability testing under scale conditions
 
 ---
 
----
-
-## 📡 **API Documentation**
+## **API Documentation**
 
 ### **Core Endpoints**
 
@@ -678,27 +625,21 @@ POST   /api/v1/contracts/interact    # Interact with contract
 
 ## 📜 **Smart Contracts**
 
-### **Deployed Contracts on BlockDAG**
+### **Deployed Contracts**
 
 ```solidity
 // Profile Factory Contract
-contract BlockDAGProfileFactory {
+contract ProfileFactory {
     address public constant PROFILE_FACTORY = 0x...;
     address public constant ESCROW_FACTORY = 0x...;
     address public constant REPUTATION_REGISTRY = 0x...;
-    address public constant BDAG_TOKEN = 0x...;
+    address public constant TOKEN = 0x...;
 }
 ```
 
-### **Contract Verification**
-All contracts are verified on BlockDAG Explorer:
-- Profile Factory: [0x...](https://explorer.blockdag.network/address/0x...)
-- Escrow Factory: [0x...](https://explorer.blockdag.network/address/0x...)
-- Reputation Registry: [0x...](https://explorer.blockdag.network/address/0x...)
-
 ---
 
-## 🔒 **Security**
+## **Security**
 
 ### **Security Measures**
 - Smart contract audits by leading firms
@@ -707,21 +648,19 @@ All contracts are verified on BlockDAG Explorer:
 - Encrypted data storage
 - Regular security assessments
 
-
-## 🌎 **Community**
+## **Community**
 
 ### **Join the LATAM Builders Community**
-
-- 🌐 [Website](https://latambuilders.xyz)
+- [Website](https://latambuilders.xyz)
 
 ### **Partners & Supporters**
-- 🚀 **BlockDAG Network** - Blockchain Infrastructure
-- 🤖 **Meta Llama** - AI Technology
-- 🌎 **LATAM Web3 Communities** - Ecosystem Partners
+- **BlockDAG Network** - Partners 
+- **Meta Llama** - AI Technology
+- **LATAM Web3 Communities** - Ecosystem Partners
 
 ---
 
-## 📄 **License**
+## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -730,7 +669,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 **Acknowledgments**
 
 Special thanks to:
-- BlockDAG Network team for the grant opportunity
+- BlockDAG Network team for the support, mentorship, and finantial support 
 - LATAM Web3 community for continuous feedback
 - All beta testers and early adopters
 - Open source contributors
@@ -739,4 +678,4 @@ Special thanks to:
 
 **Made with ❤️ by the LATAM Builders team**
 
-*Building the future of Web3 professional networking in Latin America*
+*Building with love for the Web3 community*
