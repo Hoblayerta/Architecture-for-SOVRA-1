@@ -641,6 +641,12 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 1.2 Advanced search & filtering for builders
 1.3 Bulk data access (buy/export builder datasets).
 1.4 UI for Reputation Score display (visual badge, levels).
+5 Premium data products: (e.g., ecosystem reports, custom queries)  
+
+2. UX refinements from builder/company feedback.
+
+3. Insights & benchmarks (ecosystem metrics, comparisons, trends).
+
 
 - Backend & Infra:
 1. Data Collection System v2.0 (implementation):
@@ -652,28 +658,15 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 
 3. BILDI AI Agent v2.0:
 3.1 Implement real-time learning system (feedback loop active in production).
+3.2 Implement real-time learning loop (feedback → recommendations).
    
 4. Security:
 4.1 Internal Security Vulnerability Assessment: mart contracts, audit of escrow, split, and profile contracts.
+4.2 API stress testing → verify scaling under heavy load.
+4.3 Internal security vulnerability assessment.
+4.4 Implement internal audit feedback & final adjustments across smart contracts, API, and infra.
 
-### **Phase 2: Enhancement (Months 5)**
-- Frontend (Directory):
-1. B2B features:
-1.1 Premium data products: (e.g., ecosystem reports, custom queries)  
-
-2. UX refinements from builder/company feedback.
-
-3. Insights & benchmarks (ecosystem metrics, comparisons, trends).
-
-- Backend & Infra:
-1. BILDI AI Agent v2.0: implement real-time learning loop (feedback → recommendations).
-
-2. Infrastructure optimization: DB indexing, caching, load balancing.
-
-3. Security:
-3.1 API stress testing → verify scaling under heavy load.
-3.2 Internal security vulnerability assessment.
-3.3 Implement internal audit feedback & final adjustments across smart contracts, API, and infra.
+5. Infrastructure optimization: DB indexing, caching, load balancing.
 
 ### **Phase 3: Audit & Scale Readiness (Months 6-7)**
 - Frontend (Directory):
