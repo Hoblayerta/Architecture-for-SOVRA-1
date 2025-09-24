@@ -609,16 +609,6 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 
 
 ### **Phase 1: Foundation (Months 3)**
-1. Implementation test & adjustments of privacy layers
-
-2. BILDI AI agent v2.0 - AI Engineering:
-2.1 Vector database for embeddings
-2.2 Smart contract automation
-2.3 Real-time learning system
-2.4 Multi-channel communication
-2.5 Predictive analytics engine
-
-3. Data collection system V2.0 and Reputation system architecture confirmation
 
 - Frontend (Directory):
 1. Implementation tests & adjustments of privacy layers in the directory (3 levels of data visibility).
