@@ -555,124 +555,156 @@ graph TD
 
 ### **Phase 1: Foundation (Months 1)**
 - Frontend (Directory v2):
---> Directory V2.0 – part 1:
---------> UX/UI redesign (multi-language ready)
---------> Wallet connect integration.
---------> Security baseline (auth flows, session handling).
---------> Built-in survey for onboarding builders.
---------> Basic analytics (dashboards for admins).
+1. Directory V2.0 – part 1:
+1.1 UX/UI redesign (multi-language ready)
+1.2 Wallet connect integration.
+1.3 Security baseline (auth flows, session handling).
+1.4 Built-in survey for onboarding builders.
+1.5 Basic analytics (dashboards for admins).
 
 Backend & Infra (API v1 + Factory Smart Contracts MVP):
---> API v1 (core infra): DB setup, wallet authentication, basic conversation endpoints, Telegram integration.
---> Factory Smart Contract (MVP): 
---------> Profile creation (3 roles: builders, company, PM); 
---------> Link profiles to wallet IDs; 
---------> Basic identity verification via API (not on-chain yet); 
---------> Placeholder for 3 layers of privacy (design + stub functions).
---> Payment infra (skeleton only):
---------> Escrow contract stub.
---------> Split payments skeleton defined (not audited, not production-ready).
---------> On/Off ramp integration design (API hooks).
---> Data Collection v1: store initial survey responses in DB.
+1. API v1 (core infra):
+1.1 DB setup
+1.2 wallet authentication
+1.3 basic conversation endpoints
+1.4 Telegram integration
+
+2. Factory Smart Contract (MVP):
+2.1 Profile creation (3 roles: builders, company, PM); 
+2.2 Link profiles to wallet IDs; 
+2.3 Basic identity verification via API (not on-chain yet); 
+2.4 Placeholder for 3 layers of privacy (design + stub functions).
+
+3 Payment infra (skeleton only):
+3.1 Escrow contract stub.
+3.2 Split payments skeleton defined (not audited, not production-ready).
+3.3 On/Off ramp integration design (API hooks).
+
+4 Data Collection v1: store initial survey responses in DB.
 
 **Phase 1: Foundation (Months 2)**
 - Frontend (Directory):
---> Directory V2.0 - part 2:
------> full UX/UI refinements,
------> multi-language support.
------> Wallet connect stabilization + enhanced security.
------> Built-in survey live and connected to DB.
------> Onboarding of 300–500 verified builders (with light verification/KYC-lite if possible). 
------> Mobile app development kickoff: MVP screens, login/wallet connect, referral program.
------> Advanced analytics dashboard for admins.
+1. Directory V2.0 - part 2:
+1.1 Full UX/UI refinements,
+1.2 Multi-language support.
+1.3 Wallet connect stabilization + enhanced security.
+1.4 Built-in survey live and connected to DB.
+1.5 Onboarding of 300–500 verified builders (with light verification/KYC-lite if possible). 
+1.6 Mobile app development kickoff: MVP screens, login/wallet connect, referral program.
+1.7 Advanced analytics dashboard for admins.
 
 - Backend & Infra
---> API v2:
------>Expansion to other communication channels.
------> Integration with BILDI AI Agent v1.0.
------> Basic performance analytics endpoints.
---> BILDI AI Agent v1.0:
------> Works with initial survey DB (Data Collection v1).
------> Notifications & Telegram integration.
---> Factory Smart Contract:   
------> Extend testing of escrow
------> Split payments (from M1 skeleton) with simulated flows (no audit yet).
+1. API v2:
+1.1 Expansion to other communication channels.
+1.2 Integration with BILDI AI Agent v1.0.
+1.3 Basic performance analytics endpoints.
+
+2. BILDI AI Agent v1.0:
+2.1 Works with initial survey DB (Data Collection v1).
+2.2 Notifications & Telegram integration.
+
+3. Factory Smart Contract:   
+3.1 Extend testing of escrow
+3.2 Split payments (from M1 skeleton) with simulated flows (no audit yet).
 
 
 ### **Phase 1: Foundation (Months 3)**
-- Implementation test & adjustments of privacy layers
-- BILDI AI agent v2.0 - AI Engineering: Vector database for embeddings; Smart contract automation; Real-time learning system; Multi-channel communication; Predictive analytics engine
-- Data collection system V2.0 and Reputation system architecture confirmation
+1. Implementation test & adjustments of privacy layers
+
+2. BILDI AI agent v2.0 - AI Engineering:
+2.1 Vector database for embeddings
+2.2 Smart contract automation
+2.3 Real-time learning system
+2.4 Multi-channel communication
+2.5 Predictive analytics engine
+
+3. Data collection system V2.0 and Reputation system architecture confirmation
 
 - Frontend (Directory):
---> Implementation tests & adjustments of privacy layers in the directory (3 levels of data visibility).
---> UI updates for data privacy controls (builder can manage what’s public, semi-private, or confidential).
---> Early builder feedback loop → refinements from first 300–500 onboarded users.
+1. Implementation tests & adjustments of privacy layers in the directory (3 levels of data visibility).
+
+2. UI updates for data privacy controls (builder can manage what’s public, semi-private, or confidential).
+
+3. Early builder feedback loop → refinements from first 300–500 onboarded users.
 
 - Backend & Infra:
---> BILDI AI Agent v2.0 (AI Engineering):
------> Vector database for embeddings (builder profiles + activity).
------> Smart contract automation for selected flows (e.g., reputation checkpoints, payments).
------> Multi-channel communication (expand beyond Telegram).
------> Predictive analytics engine (early recommendations on builder–company matches).
------> Design and prepare real-time learning system (architecture, data pipelines)
---> Data Collection System v2.0:
------> Add scraping modules (on-chain + off-chain).
------> Integrate push-notification quick questions and responses directly into DB (with API/BILDI sync to ensure up-to-date data).
------> Keep history for longitudinal tracking of builders.
---> Reputation System (architecture confirmation):
------> Define formula combining on-chain activity, off-chain contributions, and social validation.
------> Set design for weekly updates of Reputation Score.
+1 BILDI AI Agent v2.0 (AI Engineering):
+1.1 Vector database for embeddings (builder profiles + activity).
+1.2 Smart contract automation for selected flows (e.g., reputation checkpoints, payments).
+1.3 Multi-channel communication (expand beyond Telegram).
+1.4 Predictive analytics engine (early recommendations on builder–company matches).
+1.5 Design and prepare real-time learning system (architecture, data pipelines)
+  
+2. Data Collection System v2.0:
+2.1 Add scraping modules (on-chain + off-chain).
+2.2 Integrate push-notification quick questions and responses directly into DB (with API/BILDI sync to ensure up-to-date data).
+2.3 Keep history for longitudinal tracking of builders.
+   
+3. Reputation System (architecture confirmation):
+3.1 Define formula combining on-chain activity, off-chain contributions, and social validation.
+3.2 Set design for weekly updates of Reputation Score.
 
 ### **Phase 2: Enhancement (Months 4)**
 - Frontend (Directory 3.0):
---> Launch first B2B features:
------> Company dashboards
------> Advanced search & filtering for builders
------> Bulk data access (buy/export builder datasets).
------> UI for Reputation Score display (visual badge, levels).
+1. Launch first B2B features:
+1.1 Company dashboards
+1.2 Advanced search & filtering for builders
+1.3 Bulk data access (buy/export builder datasets).
+1.4 UI for Reputation Score display (visual badge, levels).
 
 - Backend & Infra:
---> Data Collection System v2.0 (implementation):
------> Full integration of scraping (on-chain + off-chain) into DB.
---> Reputation System (implementation):
------> Deploy scoring engine based on architecture confirmed in M3.
------> Automate weekly updates of reputation scores.
---> BILDI AI Agent v2.0:
------> Implement real-time learning system (feedback loop active in production).
---> Security:
------> Internal Security Vulnerability Assessment: mart contracts, audit of escrow, split, and profile contracts.
+1. Data Collection System v2.0 (implementation):
+1.1 Full integration of scraping (on-chain + off-chain) into DB.
 
-### **Phase 3: Enhancement (Months 5)**
+2. Reputation System (implementation):
+2.1 Deploy scoring engine based on architecture confirmed in M3.
+2.2 Automate weekly updates of reputation scores.
+
+3. BILDI AI Agent v2.0:
+3.1 Implement real-time learning system (feedback loop active in production).
+   
+4. Security:
+4.1 Internal Security Vulnerability Assessment: mart contracts, audit of escrow, split, and profile contracts.
+
+### **Phase 2: Enhancement (Months 5)**
 - Frontend (Directory):
---> B2B features:
------> Premium data products: (e.g., ecosystem reports, custom queries)  
---> UX refinements from builder/company feedback.
---> Insights & benchmarks (ecosystem metrics, comparisons, trends).
+1. B2B features:
+1.1 Premium data products: (e.g., ecosystem reports, custom queries)  
+
+2. UX refinements from builder/company feedback.
+
+3. Insights & benchmarks (ecosystem metrics, comparisons, trends).
 
 - Backend & Infra:
---> BILDI AI Agent v2.0: implement real-time learning loop (feedback → recommendations).
---> Infrastructure optimization: DB indexing, caching, load balancing.
---> Security:
------> API stress testing → verify scaling under heavy load.
------> Internal security vulnerability assessment.
------> Implement internal audit feedback & final adjustments across smart contracts, API, and infra.
+1. BILDI AI Agent v2.0: implement real-time learning loop (feedback → recommendations).
 
-### **Phase 3: Enhancement (Months 6-7)**
+2. Infrastructure optimization: DB indexing, caching, load balancing.
+
+3. Security:
+3.1 API stress testing → verify scaling under heavy load.
+3.2 Internal security vulnerability assessment.
+3.3 Implement internal audit feedback & final adjustments across smart contracts, API, and infra.
+
+### **Phase 3: Audit & Scale Readiness (Months 6-7)**
 - Frontend (Directory):
---> Bug fixing and polishing user experience.
---> Performance optimization for large-scale directory searches and dashboards.
---> Security:
------> Usability improvements based on audit findings.
------> Final polish for B2B flows and dashboards.
+1. Bug fixing and polishing user experience.
+
+2. Performance optimization for large-scale directory searches and dashboards.
+
+3. Security:
+3.1 Usability improvements based on audit findings.
+3.2 Final polish for B2B flows and dashboards.
 
 - Backend & Infra:
---> Audit readiness adjustments (documentation, test coverage).
---> Monitoring & observability setup (logs, tracing, alerts).
---> External audit kickoff (infra + penetration testing global).
------> External audit results → implement fixes across smart contracts, API, infra.
--->Scalability & stability testing under real-world conditions (simulate thousands of builders/requests).
------> Final optimization for scale launch.
+1. Audit readiness adjustments (documentation, test coverage).
+
+2. Monitoring & observability setup (logs, tracing, alerts).
+
+3. External audit kickoff (infra + penetration testing global).
+3.1 External audit results → implement fixes across smart contracts, API, infra.
+
+4. Scalability & stability testing under real-world conditions (simulate thousands of builders/requests).
+4.1 Final optimization for scale launch.
 
 ---
 
