@@ -764,5 +764,3 @@ Special thanks to:
 ---
 
 **Made with ❤️ by the LATAM Builders team**
-
-*Building with love for the Web3 community*
