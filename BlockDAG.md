@@ -634,7 +634,7 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 3.1 Define formula combining on-chain activity, off-chain contributions, and social validation.
 3.2 Set design for weekly updates of Reputation Score.
 
-### **Phase 2: Enhancement (Months 4)**
+### **Phase 2: Enhancement (Months 4-5)**
 - Frontend (Directory 3.0):
 1. Launch first B2B features:
 1.1 Company dashboards
@@ -744,6 +744,7 @@ contract ProfileFactory {
 ## **Security**
 
 ### **Security Measures**
+TBD
 - Smart contract audits by leading firms
 - Multi-signature wallet controls
 - Rate limiting and DDoS protection
@@ -760,11 +761,6 @@ contract ProfileFactory {
 - **Meta Llama** - AI Technology
 - **LATAM Web3 Communities** - Ecosystem Partners
 
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
