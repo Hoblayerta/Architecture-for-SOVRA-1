@@ -14,7 +14,7 @@ LATAM Builders is a revolutionary decentralized professional directory that conn
 - **Innovative Data collection and reputation system** - Through API and proprietary development
 - **Payment System Integration** - innovative approach to split the payment btw LB and data owner
 - **Three-Layer Privacy** - Granular data protection  
-- **Stablecoin Integration** - USDC/USDT payment system
+- **Utility Token Integration** - Native token utility and staking
 
 ---
 
