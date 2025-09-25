@@ -14,7 +14,7 @@ LATAM Builders is a revolutionary decentralized professional directory that conn
 - **Innovative Data collection and reputation system** - Through API and proprietary development
 - **Payment System Integration** - innovative approach to split the payment btw LB and data owner
 - **Three-Layer Privacy** - Granular data protection  
-- **Utility Token Integration** - Native token utility and staking
+- **Stablecoin Integration** - USDC/USDT payment system
 
 ---
 
@@ -55,8 +55,8 @@ graph TD
     X --> Y[Profile Factory Contract]
     X --> Z[Individual Profile Contracts]
     X --> AA[Escrow Smart Contracts]
-    X --> BB[Token Handler]
-    X --> CC[Reputation Registry]
+    X --> BB[Stablecoin Handler]
+    X --> CC[Verification Registry]
     
     %% Storage Infrastructure
     DD[Data Storage] --> EE[IPFS Distributed Network]
@@ -131,9 +131,9 @@ graph TD
     %% Level 1: Public Data (On-chain)
     C --> F[Public Profile Smart Contract]
     F --> G[Name, Skills]
-    F --> H[Public Reputation Score]
+    F --> H[Public Verification Status]
     F --> I[Year first joined Web3]
-    F --> I[Availability Status]
+    F --> J[Availability Status]
     
     %% Level 2: Encrypted Access (IPFS + Payment Gate)
     D --> K[🔒 Encrypted Data Package]
@@ -160,7 +160,7 @@ graph TD
     V --> Z[Verification Request]
     Z --> AA[Generate Proof]
     AA --> BB[Verify Without Revealing]
-    BB --> CC[Update Reputation]
+    BB --> CC[Update Verification Status]
     
     %% Smart Contract Integration
     F --> DD[Profile Contract]
@@ -168,7 +168,7 @@ graph TD
     T --> FF[Verification Registry]
     
     %% Payment Flow
-    N --> GG[Company Pays LB]
+    N --> GG[Company Pays in USDC]
     GG --> HH[80% to Builder]
     GG --> II[20% to LB]
     
@@ -230,7 +230,7 @@ graph TD
     L --> M[📊 Read Profile Factory Contract]
     M --> N[📝 Fetch Individual Profiles]
     N --> O[🔒 Access Private Data with Payment]
-    N --> P[⭐ Check Reputation Scores]
+    N --> P[⭐ Check Verification Status]
     N --> Q[📅 Verify Availability]
     N --> R[💰 Compare Rate Expectations]
     
@@ -247,7 +247,7 @@ graph TD
     U --> V[Maria Gonzalez - Score 96]
     U --> W[Carlos Mendoza - Score 93]
     U --> X[Ana Rodriguez - Score 90]
-    U --> Y[4️Roberto Silva - Score 87]
+    U --> Y[Roberto Silva - Score 87]
     
     %% Smart Contract Deployment
     V --> Z[Auto-Deploy Escrow Contract]
@@ -255,7 +255,7 @@ graph TD
     X --> Z
     
     %% Escrow Configuration
-    Z --> AA[Lock 5000 tokens]
+    Z --> AA[Lock USDC Amount]
     Z --> BB[Set Milestone Conditions]
     Z --> CC[Configure Dispute Resolution]
     Z --> DD[Enable Auto-payments]
@@ -290,8 +290,8 @@ graph TD
     RR --> SS[📈 BILDI Monitors Progress]
     SS --> TT[✅ Track Milestone Completion]
     TT --> UU[🔍 Validate Deliverables]
-    UU --> VV[💸 Auto-release Payments]
-    VV --> WW[📊 Update Reputation Scores]
+    UU --> VV[💸 Auto-release USDC Payments]
+    VV --> WW[📊 Update Verification Status]
     
     %% Feedback & Learning Loop
     WW --> XX[📝 Collect Project Feedback]
@@ -307,7 +307,7 @@ graph TD
     %% Smart Contract Events
     AA --> DDD[emit EscrowCreated]
     VV --> EEE[emit PaymentReleased]
-    WW --> FFF[emit ReputationUpdated]
+    WW --> FFF[emit VerificationUpdated]
     MM --> GGG[emit TeamMemberJoined]
     
     %% Error Handling
@@ -371,7 +371,7 @@ graph TD
     L --> EE[Train AI Model]
     
     %% Payments API
-    M --> FF[Process Payment]
+    M --> FF[Process USDC Payment]
     M --> GG[Get Payment Status]
     M --> HH[Create Escrow]
     M --> II[Release Payment]
@@ -381,7 +381,7 @@ graph TD
     N --> KK[Builders Analytics]
     N --> LL[Projects Analytics]
     N --> MM[Revenue Analytics]
-    N --> NN[Reputation Analytics]
+    N --> NN[Verification Analytics]
     N --> OO[Market Analytics]
     
     %% Contracts API
@@ -394,13 +394,13 @@ graph TD
     %% Backend Services
     P --> UU[🗄️ PostgreSQL Database]
     AA --> VV[AI Engine Service]
-    FF --> WW[Node]
+    FF --> WW[Stablecoin Handler]
     KK --> XX[Analytics Engine]
     PP --> YY[Contract Factory]
     
     %% External Integrations
     VV --> ZZ[Llama 3.2 API]
-    WW --> AAA[Network]
+    WW --> AAA[USDC/USDT Network]
     XX --> BBB[Data Visualization]
     U --> CCC[Elasticsearch]
     
@@ -435,51 +435,51 @@ graph TD
 
 ---
 
-##  **5. Economics & Token Flow**
+##  **5. Economics & Stablecoin Flow**
 
 ```mermaid
 graph TD
-    %% Token Sources
-    A --> B[Companies Purchase Token]
-    A --> C[Builders Earn Token]
+    %% Payment Sources
+    A[Payment System] --> B[Companies Purchase USDC Access]
+    A --> C[Builders Earn USDC]
     A --> D[Platform Operations]
     
     %% Company Payment Flow
-    B --> E[Pay for Private Access]
+    B --> E[Pay for Private Data Access]
     B --> F[Fund Project Escrows]
     B --> G[Premium Features]
     B --> H[Priority Matching]
     
     %% Builder Earning Flow
-    E --> I[Builder receives 80 percent]
+    E --> I[Builder receives 80% in USDC]
     F --> J[Project completion payments]
     G --> K[Feature access rewards]
-    H --> L[Boost visibility]
+    H --> L[Visibility boost fees]
     
     %% Platform Revenue
-    E --> M[Platform receives 20 percent]
-    J --> N[5 percent platform fee]
+    E --> M[Platform receives 20% USDC]
+    J --> N[5% platform fee]
     G --> O[Subscription revenue]
     H --> P[Service fees]
     
-    %% Token Utility Mechanisms
-    Q[Utility Token] --> R[Payment Medium]
-    Q --> S[Staking for Reputation]
-    Q --> T[Governance Voting]
+    %% Payment System Features
+    Q[USDC/USDT System] --> R[Payment Medium]
+    Q --> S[Instant Settlements]
+    Q --> T[Low Transaction Fees]
     Q --> U[AI Agent Operations]
     Q --> V[Security Deposits]
     
-    %% Staking System
-    S --> W[Builder stakes for credibility]
-    S --> X[Higher stake equals higher trust]
-    S --> Y[Slash for poor performance]
-    S --> Z[Rewards for good performance]
+    %% Verification System
+    S --> W[Builder verification process]
+    S --> X[KYC/Identity validation]
+    S --> Y[Performance tracking]
+    S --> Z[Quality assurance]
     
-    %% Governance Features
-    T --> AA[Vote on platform features]
-    T --> BB[Fee structure decisions]
-    T --> CC[Dispute resolution]
-    T --> DD[Protocol upgrades]
+    %% Platform Features
+    T --> AA[Access to premium features]
+    T --> BB[Enhanced search visibility]
+    T --> CC[Priority support]
+    T --> DD[Advanced analytics]
     
     %% AI Operations Costs
     U --> EE[BILDI matching computations]
@@ -491,13 +491,13 @@ graph TD
     V --> II[Project escrow deposits]
     V --> JJ[Dispute arbitration bonds]
     V --> KK[Anti-spam measures]
-    V --> LL[Identity verification stakes]
+    V --> LL[Identity verification fees]
     
     %% Cost Comparison Analysis
-    MM[Advantages] --> NN[0.001 USD per transaction]
+    MM[Network Advantages] --> NN[0.001 USD per transaction]
     MM --> OO[24 USD per month for 1000 builders]
-    MM --> PP[97 percent cheaper than competitors]
-    MM --> QQ[10000 plus TPS capacity]
+    MM --> PP[97% cheaper than competitors]
+    MM --> QQ[10000+ TPS capacity]
     
     %% Revenue Streams
     RR[Platform Revenue] --> SS[🔐 Private data access fees]
@@ -506,23 +506,23 @@ graph TD
     RR --> VV[Enterprise API access]
     RR --> WW[Analytics and insights]
     
-    %% Token Economics Flow
-    SS --> XX[Token buyback program]
+    %% Revenue Distribution
+    SS --> XX[Operational costs]
     TT --> XX
     UU --> XX
     VV --> XX
     WW --> XX
     
-    %% Value Appreciation Mechanisms
-    XX --> YY[Token burn mechanism]
-    XX --> ZZ[Liquidity provision]
-    XX --> AAA[Staker rewards distribution]
+    %% Growth Mechanisms
+    XX --> YY[Platform development]
+    XX --> ZZ[Marketing and growth]
+    XX --> AAA[Builder incentives]
     
     %% Network Effects
-    BBB[Network Growth] --> CCC[ More builders equals more value]
-    BBB --> DDD[More companies equals higher demand]
-    BBB --> EEE[Better AI equals better matches]
-    BBB --> FFF[Higher token velocity]
+    BBB[Network Growth] --> CCC[More builders = more value]
+    BBB --> DDD[More companies = higher demand]
+    BBB --> EEE[Better AI = better matches]
+    BBB --> FFF[Higher transaction volume]
     
     %% Sustainability Model
     GGG[Sustainable Economics] --> HHH[Self-funding through fees]
@@ -613,14 +613,14 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 - Frontend (Directory):
 1. Implementation tests & adjustments of privacy layers in the directory (3 levels of data visibility).
 
-2. UI updates for data privacy controls (builder can manage what’s public, semi-private, or confidential).
+2. UI updates for data privacy controls (builder can manage what's public, semi-private, or confidential).
 
 3. Early builder feedback loop → refinements from first 300–500 onboarded users.
 
 - Backend & Infra:
 1 BILDI AI Agent v2.0 (AI Engineering):
 1.1 Vector database for embeddings (builder profiles + activity).
-1.2 Smart contract automation for selected flows (e.g., reputation checkpoints, payments).
+1.2 Smart contract automation for selected flows (e.g., verification checkpoints, payments).
 1.3 Multi-channel communication (expand beyond Telegram).
 1.4 Predictive analytics engine (early recommendations on builder–company matches).
 1.5 Design and prepare real-time learning system (architecture, data pipelines)
@@ -630,9 +630,9 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 2.2 Integrate push-notification quick questions and responses directly into DB (with API/BILDI sync to ensure up-to-date data).
 2.3 Keep history for longitudinal tracking of builders.
    
-3. Reputation System (architecture confirmation):
-3.1 Define formula combining on-chain activity, off-chain contributions, and social validation.
-3.2 Set design for weekly updates of Reputation Score.
+3. Verification System (architecture confirmation):
+3.1 Define process combining on-chain activity, off-chain contributions, and social validation.
+3.2 Set design for weekly updates of verification status.
 
 ### **Phase 2: Enhancement (Months 4-5)**
 - Frontend (Directory 3.0):
@@ -640,7 +640,7 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 1.1 Company dashboards
 1.2 Advanced search & filtering for builders
 1.3 Bulk data access (buy/export builder datasets).
-1.4 UI for Reputation Score display (visual badge, levels).
+1.4 UI for verification status display (visual badge, levels).
 5 Premium data products: (e.g., ecosystem reports, custom queries)  
 
 2. UX refinements from builder/company feedback.
@@ -652,16 +652,16 @@ Backend & Infra (API v1 + Factory Smart Contracts MVP):
 1. Data Collection System v2.0 (implementation):
 1.1 Full integration of scraping (on-chain + off-chain) into DB.
 
-2. Reputation System (implementation):
-2.1 Deploy scoring engine based on architecture confirmed in M3.
-2.2 Automate weekly updates of reputation scores.
+2. Verification System (implementation):
+2.1 Deploy verification engine based on architecture confirmed in M3.
+2.2 Automate weekly updates of verification status.
 
 3. BILDI AI Agent v2.0:
 3.1 Implement real-time learning system (feedback loop active in production).
 3.2 Implement real-time learning loop (feedback → recommendations).
    
 4. Security:
-4.1 Internal Security Vulnerability Assessment: mart contracts, audit of escrow, split, and profile contracts.
+4.1 Internal Security Vulnerability Assessment: Smart contracts, audit of escrow, split, and profile contracts.
 4.2 API stress testing → verify scaling under heavy load.
 4.3 Internal security vulnerability assessment.
 4.4 Implement internal audit feedback & final adjustments across smart contracts, API, and infra.
@@ -713,7 +713,7 @@ POST   /api/v1/ai/match              # Get AI recommendations
 POST   /api/v1/ai/feedback           # Submit feedback
 
 # Payments
-POST   /api/v1/payments/process      # Process payment
+POST   /api/v1/payments/process      # Process USDC payment
 POST   /api/v1/payments/escrow       # Create escrow
 POST   /api/v1/payments/release      # Release payment
 
@@ -734,8 +734,8 @@ POST   /api/v1/contracts/interact    # Interact with contract
 contract ProfileFactory {
     address public constant PROFILE_FACTORY = 0x...;
     address public constant ESCROW_FACTORY = 0x...;
-    address public constant REPUTATION_REGISTRY = 0x...;
-    address public constant TOKEN = 0x...;
+    address public constant VERIFICATION_REGISTRY = 0x...;
+    address public constant USDC_TOKEN = 0x...;
 }
 ```
 
